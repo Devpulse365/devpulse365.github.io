@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevPulse365 - Developer Tool Guides</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #0d1117;
+            color: #c9d1d9;
+        }
+        h1 { color: #58a6ff; }
+        .post { 
+            background: #161b22;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 6px;
+            border: 1px solid #30363d;
+        }
+        a { color: #58a6ff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <h1>DevPulse365</h1>
+    <p>Your guide to developer tools, cloud platforms, and AI APIs.</p>
+    
+    <div id="posts"></div>
+    
+    <script>
+        // Your system will populate this via API
+        const posts = [];
+        const postsDiv = document.getElementById('posts');
+        if (posts.length === 0) {
+            postsDiv.innerHTML = '<p>Articles coming soon...</p>';
+        }
+    </script>
+</body>
+</html>
